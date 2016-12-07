@@ -226,8 +226,7 @@
             "IpProtocol": "tcp",
             "FromPort": "22",
             "ToPort": "22",
-            "CidrIp": {
-              "Ref": "SSHLocation"
+            "CidrIp": "0.0.0.0/0"             
             }
           }
         ]
@@ -259,8 +258,8 @@
                     ]
                   ]
                 },
-                "mode": "000644",
-                "owner": "root",
+                "mode": "000777",
+                "owner": "ec2-user",
                 "group": "root"
               }
             },
